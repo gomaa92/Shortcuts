@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShortCuts</string>
+    <string name="short_label1">Screen one</string>
+    <string name="long_label1">Screen one</string>
+    <string name="short_label2">Screen Two</string>
+    <string name="long_label2">Screen Two</string>
+</resources>

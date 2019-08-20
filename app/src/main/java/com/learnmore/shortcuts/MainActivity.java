@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         intentTwo.setAction(Intent.ACTION_VIEW);
 
 
+        Intent[] intents = {intentTwo, intentOne};
         ShortcutInfo shortcutInfo = new ShortcutInfo.Builder(this, "dynamic1")
                 .setShortLabel("Dynamic1")
                 .setLongLabel("Dynamic Long Label 1")

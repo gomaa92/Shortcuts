@@ -24,13 +24,15 @@ public class MainActivity extends AppCompatActivity {
         ShortcutManager shortcutManager = getSystemService(ShortcutManager.class);
 
         Intent intentOne = new Intent(MainActivity.this, ActivityMessageFragment.class);
+
         intentOne.setAction(Intent.ACTION_VIEW);
 
         Intent intentTwo = new Intent(MainActivity.this, Dynamic2Activity.class);
+        intentTwo.putExtra("number" , "5");
         intentTwo.setAction(Intent.ACTION_VIEW);
 
 
-        Intent[] intents = {intentTwo, intentOne};
+        Intent[] intents = {intentOne};
         ShortcutInfo shortcutInfo = new ShortcutInfo.Builder(this, "dynamic1")
                 .setShortLabel("Dynamic1")
                 .setLongLabel("Dynamic Long Label 1")
